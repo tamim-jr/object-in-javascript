@@ -11,9 +11,25 @@
     <p id="object"></p>
     <script>
         //create an object
-        const car = {type:"BMW", Model:"5000", Weight:800, color:"red"};
+        const cars = {type:"BMW", Model:"5000", Weight:800, color:"red"};
         //Disply some data from object
-        document.getElementById("object").innerHTML="The Car type is " + car.type;
+        document.getElementById("object").innerHTML="The Car type is " + cars.type;
+    </script>
+
+    <script>
+        const car = {
+            name : "BMW",
+            model : 500,
+            weight : "850kg",
+            start: function(){
+                console.log("This car can start.");
+            },
+            drive: function(){
+                console.log("This car can drive.");
+            },
+        }
+        console.log(car.weight);
+        car.start("BMW");
     </script>
 </body>
 </html>
